@@ -1,25 +1,35 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './components/pages/Home';
+import Navbar from './components/layout/Navbar';
+import RecipeList from './components/pages/RecipeList';
+import RecipeGrid from './components/pages/RecipeGrid';
+import Recipe from './components/recipes/Recipe';
+import Footer from './components/layout/Footer';
+
+import { RecipeProvider } from './Context';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+
+    return (
+      <RecipeProvider>
+        <Router>
+          <div className="App">
+            <Navbar />
+            <div>
+              <Switch>
+                <Route exact path='/' component={Home} />
+                <Route exact path='/recipelist' component={RecipeList} />
+                <Route exact path='/recipegrid' component={RecipeGrid} />
+                <Route exact path='/recipe/:id' component={Recipe} />
+              </Switch>
+            </div>
+            <Footer />
+          </div>
+        </Router>
+      </RecipeProvider>
+    );
 }
 
 export default App;
