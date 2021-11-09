@@ -87,7 +87,7 @@ const Footer = () => {
                 </div>
                 <div className="last-link all-center">
                     <div className="menu">
-                        <ul>
+                        <ul className='menu-ul'>
                             <li>
                                 <a className='text-center text-dark p-1' href="/">Home</a>
                             </li>   

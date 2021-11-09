@@ -11,51 +11,50 @@ const RecipeList = () => {
                 <div className="container">
                     <div className="menu">
                         <img src={image} alt="logo" className='logo' />
-                        <ul>
-                            <li>
-                                <a className='text-center text-dark p-1 tooltip' href="/">
+                        <ul className='menu-ul'>
+                            <li className='tooltip'>
+                                <a className='text-center text-dark p-1' href="/">
                                     Home
-                                    <span className="tooltiptext">
-                                        <p><a href="/">Home Page 1</a></p>
-                                        <p><a href="/">Home Page 2</a></p>
-                                    </span>
-                                    
                                 </a>
+                                <ul className="tooltiptext">
+                                    <li><a href="/">Home Page 1</a></li>
+                                    <li><a href="/">Home Page 2</a></li>
+                                </ul>
                             </li>   
-                            <li>
-                                <a className='text-center text-dark p-1 tooltip' href="/">
+                            <li className='tooltip'>
+                                <a className='text-center text-dark p-1' href="/">
                                     Pages
-                                    <span className="tooltiptext">
-                                        <p><a href="/">"How To" Page</a></p>
-                                        <p><a href="/">Single Chef Page</a></p>
-                                        <p><a href="/">Chef List Page</a></p>
-                                        <p><a href="/">Our History</a></p>
-                                        <p><a href="/">Booking Table</a></p>
-                                    </span>
                                 </a>
+                                <ul className="tooltiptext">
+                                    <li><Link to="/">"How To" Page</Link></li>
+                                    <li><Link to="/">Single Chef Page</Link></li>
+                                    <li><Link to="/">Chef List Page</Link></li>
+                                    <li><Link to="/">Our History</Link></li>
+                                    <li><Link to="/">Booking Table</Link></li>
+                                </ul>
                             </li>   
-                            <li>
-                                <a className= 'text-center text-dark p-1 tooltip' href="/">
+                            <li className='tooltip'>
+                                <a className= 'text-center text-dark p-1' href="/recipe">
                                     Recipe
-                                    <span className="tooltiptext">
-                                        <p><Link to="/recipeList">Recipe List Page</Link></p>
-                                        <p><Link to="/recipeGrid">Recipe Grid Page</Link></p>
-                                        <p><a href="/">Single Recipe Style 1</a></p>
-                                        <p><a href="/">Single Recipe Style 2</a></p>
-                                        <p><a href="/">Single Recipe Style 3</a></p>
-                                        <p><a href="/">Single Recipe Style 4</a></p>
-                                    </span>
                                 </a>
+                                <ul className="tooltiptext">
+                                    <li><Link to="/recipeList">Recipe List Page</Link></li>
+                                    <li><Link to="/recipeGrid">Recipe Grid Page</Link></li>
+                                    <li><Link to="/">Single Recipe Style 1</Link></li>
+                                    <li><Link to="/">Single Recipe Style 2</Link></li>
+                                    <li><Link to="/">Single Recipe Style 3</Link></li>
+                                    <li><Link to="/">Single Recipe Style 4</Link></li>
+                                </ul>
                             </li>   
-                            <li>
-                                <a className= 'text-center text-dark p-1 tooltip' href="/">
+                            <li className='tooltip'>
+                                <a className= 'text-center text-dark p-1' href="/">
                                     Blogs
-                                    <span className="tooltiptext">
-                                        <p><a href="/">Blog Details</a></p>
-                                        <p><a href="/">Blog Grid</a></p>
-                                        <p><a href="/">Blog List</a></p>
-                                    </span>
                                 </a>
+                                <ul className="tooltiptext">
+                                    <li><Link to="/">Blog Details</Link></li>
+                                    <li><Link to="/">Blog Grid</Link></li>
+                                    <li><Link to="/">Blog List</Link></li>
+                                </ul>
                             </li>   
                             <li>
                                 <a className= 'text-center text-dark p-1' href="/">About Us</a>
@@ -73,7 +72,7 @@ const RecipeList = () => {
                     </div>
                     <div className="mt-2 all-center">
                         <h1>RECIPE LIST</h1>
-                        <a href="/">Home - <span><a href='#!'>Recipe Grid</a></span></a>
+                        <p><a href="/">Home </a> - <span><a href='#!'>Recipe Grid</a></span></p>
                         
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import background from '../../images/toa-heftiba.jpg';
 import Menu from '../layout/Menu';
 import image2 from '../../images/sin-recpie-img.jpg';
 import image3 from '../../images/today-recipe1.jpg';
@@ -8,7 +9,19 @@ import image5 from '../../images/today-recipe2.jpg';
 const Home = () => {
     return (
         <div>
-            <Menu />
+            <div style={bg_style}>
+                <Menu />
+                <div className="container">
+                    <div className="m-t text-left">
+                        <p className="lead-2">The Perfect Choice</p>
+                        <h1 className='m-h'>Chicken and Mushroom</h1>
+                        <p className='lead-3'>Fresh, organic ingredients. Carefully prepared</p>
+                    </div>
+                    <button className='btn btn-success bt-m'>
+                        BOOK A TABLE
+                    </button>
+                </div>
+            </div>
             <div className="container">
                 <div className="grid-4">
                     <div className='card-2 all-center sub-img'>
@@ -105,6 +118,14 @@ const Home = () => {
             </div>
         </div>
     );
+};
+
+const bg_style = {
+    backgroundImage: `url(${background})`, 
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    height: '100vh',
 };
 
 const menuStyle2 = {

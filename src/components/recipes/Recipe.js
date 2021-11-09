@@ -1,6 +1,6 @@
 import React, { Fragment, useContext } from 'react';
 import background from '../../images/toa-heftiba.jpg';
-import image from '../../images/logo.png';
+import Menu from '../layout/Menu';
 import capture4 from '../../images/Capture4.PNG';
 import { useParams } from 'react-router';
 import { RecipeContext } from '../../Context';
@@ -23,72 +23,11 @@ const Recipe = () => {
     return (
         <Fragment>
             <div style={bg_style}>
+                <Menu />
                 <div className="container">
-                    <div className="menu">
-                        <img src={image} alt="logo" className='logo' />
-                        <ul>
-                            <li>
-                                <a className='text-center text-dark p-1 tooltip' href="/">
-                                    Home
-                                    <span className="tooltiptext">
-                                        <p><a href="/">Home Page 1</a></p>
-                                        <p><a href="/">Home Page 2</a></p>
-                                    </span>
-                                    
-                                </a>
-                            </li>   
-                            <li>
-                                <a className='text-center text-dark p-1 tooltip' href="/">
-                                    Pages
-                                    <span className="tooltiptext">
-                                        <p><a href="/">"How To" Page</a></p>
-                                        <p><a href="/">Single Chef Page</a></p>
-                                        <p><a href="/">Chef List Page</a></p>
-                                        <p><a href="/">Our History</a></p>
-                                        <p><a href="/">Booking Table</a></p>
-                                    </span>
-                                </a>
-                            </li>   
-                            <li>
-                                <a className= 'text-center text-dark p-1 tooltip' href="/">
-                                    Recipe
-                                    <span className="tooltiptext">
-                                        <p><Link to="/recipeList">Recipe List Page</Link></p>
-                                        <p><Link to="/recipeGrid">Recipe Grid Page</Link></p>
-                                        <p><a href="/">Single Recipe Style 1</a></p>
-                                        <p><a href="/">Single Recipe Style 2</a></p>
-                                        <p><a href="/">Single Recipe Style 3</a></p>
-                                        <p><a href="/">Single Recipe Style 4</a></p>
-                                    </span>
-                                </a>
-                            </li>   
-                            <li>
-                                <a className= 'text-center text-dark p-1 tooltip' href="/">
-                                    Blogs
-                                    <span className="tooltiptext">
-                                        <p><a href="/">Blog Details</a></p>
-                                        <p><a href="/">Blog Grid</a></p>
-                                        <p><a href="/">Blog List</a></p>
-                                    </span>
-                                </a>
-                            </li>   
-                            <li>
-                                <a className= 'text-center text-dark p-1' href="/">About Us</a>
-                            </li>   
-                            <li>
-                                <a className= 'text-center text-dark p-1' href="/">Contact Us</a>
-                            </li>   
-                        </ul>  
-                        <button className='btn btn-success bt-m'>
-                            SUBMIT RECIPE
-                        </button>
-                        <a href="#!" className="move btn-white round-img">
-                        <i className="fa fa-briefcase br-c" />
-                        </a>
-                    </div>
                     <div className="mt-2 all-center">
                         <h1>RECIPE DETAILS</h1>
-                        <a href="#!">Home - <span><a href='#!'>Recipe Grid</a></span></a>
+                        <p><a href="#!">Home </a> - <span><a href='#!'>Recipe Details</a></span></p>
                         
                     </div>
                 </div>
@@ -147,7 +86,7 @@ const Recipe = () => {
     Ea ratione o ptio nulla illum, eius lla illum, Loremo lor sit amet, consectetur a dipis icing eit amet, conse ulla illum, us do lor maiores nulla illum, Lorem ipsum dolor s it am et, consect etur a dip onsectetur a dipis icing elit. Eaisicing nulla illum, eius lla illum, Lorem ipsum dolor sit.
 
                         </p>
-                        <div key={recipe.id}>
+                        <div>
                             <a href={recipe.originalURL} className='btn btn-dark btn-block my-1 text-center'>
                                 Get Recipe Details
                             </a>
@@ -155,16 +94,16 @@ const Recipe = () => {
                         <div className='r-last-div'>
                             <h1>Ingredients</h1>
                             {recipe.ingredients.map((ingredient, index) => (
-                                <p className='recipe-p2'>
-                                    <i className="fa fa-check text-success" key={index} style={{ marginRight: '1rem' }} /> {`${ingredient.quantity} ${ingredient.name}`}
+                                <p key={index} className='recipe-p2'>
+                                    <i className="fa fa-check text-success" style={{ marginRight: '1rem' }} /> {`${ingredient.quantity} ${ingredient.name}`}
                                 </p>
                             ))}
                         </div>
                         <div className='r-last-div'>
                             <h1>Instructions</h1>
                             {recipe.steps.map((step, index) => (
-                                <p className='recipe-p2'>
-                                    <i className="fa fa-circle text-success" key={index} style={{ marginRight: '1rem', fontSize: '0.6rem' }} /> {step}
+                                <p key={index} className='recipe-p2'>
+                                    <i className="fa fa-circle text-success" style={{ marginRight: '1rem', fontSize: '0.6rem' }} /> {step}
                                 </p>
                             ))}
                         </div>
