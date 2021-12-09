@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './components/pages/Home';
-import Navbar from './components/layout/Navbar';
 import RecipeList from './components/pages/RecipeList';
 import RecipeGrid from './components/pages/RecipeGrid';
 import Recipe from './components/recipes/Recipe';
@@ -16,7 +15,6 @@ const App = () => {
       <RecipeProvider>
         <Router>
           <div className="App">
-            <Navbar />
             <div>
               <Switch>
                 <Route exact path='/' component={Home} />
