@@ -10,54 +10,30 @@ const Home = () => {
                     <img src={image} alt="logo" className='logo' />
                     <ul className='menu-ul'>
                         <li className='tooltip'>
-                            <a className='text-center text-dark p-1' href="/">
+                            <Link className='text-center text-dark p-1' to="/">
                                 Home
-                            </a>
-                            <ul className="tooltiptext">
-                                <li><a href="/">Home Page 1</a></li>
-                                <li><a href="/">Home Page 2</a></li>
-                            </ul>
+                            </Link>
                         </li>   
                         <li className='tooltip'>
-                            <a className='text-center text-dark p-1' href="/">
+                            <Link className='text-center text-dark p-1' to="/#">
                                 Pages
-                            </a>
-                            <ul className="tooltiptext">
-                                <li><Link to="/">"How To" Page</Link></li>
-                                <li><Link to="/">Single Chef Page</Link></li>
-                                <li><Link to="/">Chef List Page</Link></li>
-                                <li><Link to="/">Our History</Link></li>
-                                <li><Link to="/">Booking Table</Link></li>
-                            </ul>
+                            </Link>
                         </li>   
                         <li className='tooltip'>
-                            <a className= 'text-center text-dark p-1' href="/">
+                            <Link className= 'text-center text-dark p-1' to="/recipeGrid">
                                 Recipe
-                            </a>
-                            <ul className="tooltiptext">
-                                <li><Link to="/recipeList">Recipe List Page</Link></li>
-                                <li><Link to="/recipeGrid">Recipe Grid Page</Link></li>
-                                <li><Link to="/">Single Recipe Style 1</Link></li>
-                                <li><Link to="/">Single Recipe Style 2</Link></li>
-                                <li><Link to="/">Single Recipe Style 3</Link></li>
-                                <li><Link to="/">Single Recipe Style 4</Link></li>
-                            </ul>
+                            </Link>
                         </li>   
                         <li className='tooltip'>
-                            <a className= 'text-center text-dark p-1' href="/">
+                            <Link className= 'text-center text-dark p-1' to="/">
                                 Blogs
-                            </a>
-                            <ul className="tooltiptext">
-                                <li><Link to="/">Blog Details</Link></li>
-                                <li><Link to="/">Blog Grid</Link></li>
-                                <li><Link to="/">Blog List</Link></li>
-                            </ul>
+                            </Link>
                         </li>   
                         <li>
-                            <a className= 'text-center text-dark p-1' href="/">About Us</a>
+                            <Link className= 'text-center text-dark p-1' to="/#">About Us</Link>
                         </li>   
                         <li>
-                            <a className= 'text-center text-dark p-1' href="/">Contact Us</a>
+                            <Link className= 'text-center text-dark p-1' to="/#">Contact Us</Link>
                         </li>   
                     </ul>  
                     <button className='btn btn-success bt-m'>

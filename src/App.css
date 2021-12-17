@@ -133,8 +133,8 @@ img {
 }
 
 .main-sub {
-  width: 350px;
-  margin: 50px 0;
+  width: 0 auto;
+  padding: 50px 0;
 }
 
 .main-sub h1 {
@@ -356,6 +356,11 @@ img {
   float: right;
   font-size: 18px;
   margin-top: -4rem;
+}
+
+.last-link {
+  position: relative;
+  top: 2rem;
 }
 
 .last-link a {
@@ -834,7 +839,8 @@ table th {
 
   .menu {
     display: block;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    margin-bottom: -1rem;
   }
 
   .menu ul {
@@ -859,17 +865,24 @@ table th {
     display: none;
   }
 
+  .card_cont {
+    width: 350px;
+    margin: 0 auto;
+  }
+
   .card-2 {
     display: block;
   }
 
   .main-sub {
+    width: 300px;
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 
   .mid-container {
-    height: 180vh;
+    height: 155vh;
   }
 
   .mid-container h3 {
@@ -887,7 +900,8 @@ table th {
   }
 
   .main-2 {
-    padding-left: 130px;
+    /* margin: 0 auto; */
+    padding-left: 100px;
   }
 
   .sub-img {
@@ -899,7 +913,7 @@ table th {
 
   .card-3 {
     display: flex;
-    margin: 1rem 0;
+    margin-bottom: -1rem;
   }
 
   .card-3-s {
@@ -912,6 +926,12 @@ table th {
 
   .footer {
     max-width: 700px;
+  }
+
+  .footer .menu {
+    position: relative;
+    top: -5rem;
+    margin-bottom: 2rem;
   }
 
   .footer-div-1 {

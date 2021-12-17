@@ -23,21 +23,21 @@ const Home = () => {
                 </div>
             </div>
             <div className="container">
-                <div className="grid-4">
+                <div className="grid-4 card_cont">
                     <div className='card-2 all-center sub-img'>
-                        <i className="fa fa-university text-success fa-8x" />
+                        <i className="fa fa-birthday-cake text-primary fa-8x" />
                         <p className="lead m-h">Meats</p>
                     </div>
                     <div className='card-2 all-center'>
-                        <i className="fa fa-university text-success fa-8x" />
+                        <i className="fa fa-cubes text-success fa-8x" />
                         <p className="lead m-h">Bakery</p>
                     </div>
                     <div className='card-2 all-center'>
-                        <i className="fa fa-university text-success fa-8x" />
+                        <i className="fa fa-cutlery text-dark fa-8x" />
                         <p className="lead m-h">Vegetables</p>
                     </div>
                     <div className='card-2 all-center'>
-                        <i className="fa fa-university text-success fa-8x" />
+                        <i className="fa fa-inbox text-warning fa-8x" />
                         <p className="lead m-h">Cheese</p>
                     </div>
                 </div>
