@@ -15,7 +15,7 @@ const Recipes = () => {
 
     return (
         <div>
-            <div className='container' style={recipeStyle}>
+            <div className='container grid-3'>
                 {recipes.map((recipe) => (
                     <RecipeItem key={recipe.id} recipe={recipe} />
                 ))}
@@ -23,11 +23,5 @@ const Recipes = () => {
         </div>
     );
 };
-
-const recipeStyle = {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(3, 1fr)',
-    gridGap: '1rem'
-}
 
 export default Recipes;

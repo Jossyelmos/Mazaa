@@ -11,6 +11,7 @@
   --success-color: #28a745;
   --warning-color: #490007;
   --bright-color: #ffff00;
+  --grey-color: #d9dbd8;
 }
 
 * {
@@ -46,14 +47,30 @@ img {
 
 /* Utilities */
 .container {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: auto;
   overflow: hidden;
   padding: 0.5rem;
 }
 
 .logo {
-  width: 100px;
+  width: 70px;
+}
+
+.singleImg {
+  width: 200px;
+  height: 200px;
+}
+
+.singleRecipeImg {
+  width: 500px;
+  height: 500px;
+}
+
+.recipeCapture {
+  width: 550px;
+  margin-top: -20px;
+  margin-left: -20px;
 }
 
 .menu {
@@ -96,7 +113,7 @@ img {
 }
 
 .mt-2 {
-  padding-top: 1rem;
+  padding-top: 4rem;
 }
 
 .mt-2 span a {
@@ -126,15 +143,12 @@ img {
 }
 
 .br-c {
-  height: 3rem;
-  width: 3rem;
-  padding-top: 15px;
-  padding-left: 1rem;
+  padding: 15px;
 }
 
 .main-sub {
-  width: 0 auto;
-  padding: 50px 0;
+  width: 450px;
+  margin: auto;
 }
 
 .main-sub h1 {
@@ -154,6 +168,7 @@ img {
 .mid-container {
   background-color: #e8ebf1;
   height: 150vh;
+  border-radius: 5%;
 }
 
 .mid-container h3 {
@@ -176,57 +191,28 @@ img {
   margin-bottom: 100px;
 }
 
-.menu-ul .tooltip {
-  position: relative;
+.home {
+  width: 100%;
+  height: 500px;
+  margin-top: 100px;
 }
 
-.menu-ul .tooltip .tooltiptext {
-  visibility: hidden;
-  width: 215px;
-  text-align: left;
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: 80%;
-  margin-top: 0.5rem;
-  margin-left: -60px;
+.homeImg {
+  height: 500px;
 }
 
-.menu-ul .tooltip .tooltiptext li {
-  width: 215px;
-  background-color: white;
-  margin-left: auto;
-  padding: 7px;
-}
-.menu-ul .tooltip .tooltiptext a {
-  color: black;
-  font-size: 0.9rem;
-  padding: 10px 20px;
+.about {
+  margin-top: 100px;
 }
 
-.menu-ul .tooltip .tooltiptext li:hover {
-  background-color: var(--success-color);
-  color: white;
+.about h1 {
+  font-size: 3rem;
+  padding-bottom: 40px;
 }
 
-.menu-ul .tooltip .tooltiptext li:hover a {
-  color: white;
-}
-
-.menu-ul .tooltip .tooltiptext::after {
-  content: '';
-  position: absolute;
-  bottom: 100%;
-  left: 8%;
-  margin-left: -7px;
-  border-width: 10px;
-  border-style: solid;
-  border-color: transparent transparent #28a745 transparent;
-}
-
-.menu-ul .tooltip:hover .tooltiptext {
-  visibility: visible;
-  border-top: 3px#28a745 solid;
+.about-p {
+  width: 300px;
+  margin-top: 70px;
 }
 
 /* Footer */
@@ -236,12 +222,7 @@ img {
   margin: auto;
   overflow: hidden;
   padding: 0.5rem;
-}
-
-.footer h1 {
-  color: #fff;
-  font-family: 'Lora', serif;
-  margin-bottom: 2rem;
+  font: inherit;
 }
 
 .footer p {
@@ -250,12 +231,11 @@ img {
 
 .footer-div-1 {
   width: 300px;
-  margin-top: 8rem;
 }
 
 .footer-div-1 ul {
   display: flex;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .footer-div-1 li {
@@ -263,7 +243,15 @@ img {
   border-radius: 25px;
   height: 3rem;
   width: 3rem;
-  margin: 2px;
+  margin: 10px;
+  background-color: #333333;
+  position: relative;
+  left: 10px;
+}
+
+.footer-div-1 a {
+  color: #ccc;
+  letter-spacing: 0.1rem;
 }
 
 .footer li a {
@@ -276,6 +264,11 @@ img {
 
 .recipe-div-1 ul {
   display: flex;
+}
+
+.recipeImg {
+  height: 300px;
+  margin-top: 100px;
 }
 
 .recipe-div-1 li {
@@ -309,32 +302,6 @@ img {
   margin-left: 2rem;
   margin-bottom: 2rem;
   font-family: 'Lora', serif;
-}
-
-.footer-div-1 img {
-  margin-top: 1rem;
-  width: 55px;
-}
-
-.footer-div-2 {
-  width: 300px;
-  margin-top: 8rem;
-}
-
-.footer-div-2 ul {
-  color: #ccc;
-}
-
-.footer-div-2 li {
-  margin: 2px;
-  padding-bottom: 0.7rem;
-  border: none;
-  font-size: 17px;
-}
-
-.footer-div-2 a {
-  color: #ccc;
-  letter-spacing: 0.1rem;
 }
 
 .last-div {
@@ -445,6 +412,10 @@ img {
 
 .text-bright {
   color: var(--bright-color);
+}
+
+.text-grey {
+  color: var(--grey-color);
 }
 
 .text-center {
@@ -712,6 +683,14 @@ img {
   color: #fff;
 }
 
+.btn-grey,
+.bg-grey,
+.badge-grey,
+.alert-grey {
+  background: var(--grey-color);
+  color: #333333;
+}
+
 .btn-white,
 .bg-white,
 .badge-white,
@@ -794,7 +773,7 @@ table th {
 }
 
 .navbar a:hover {
-  color: var(--light-color);
+  color: var(--success-color);
 }
 
 .navbar .welcome span {
@@ -828,7 +807,6 @@ table th {
 
   /* Navbar */
   .navbar {
-    display: none;
     text-align: center;
   }
 
@@ -837,27 +815,29 @@ table th {
     justify-content: center;
   }
 
-  .menu {
-    display: block;
-    margin-top: 2rem;
-    margin-bottom: -1rem;
-  }
-
-  .menu ul {
-    display: block;
-    text-align: center;
-    justify-content: center;
-  }
-
   .logo {
     display: none;
   }
 
-  .bt-m {
-    display: none;
+  .homeImg {
+    height: 250px;
   }
 
-  .br-c {
+  .singleImg {
+    width: 120px;
+    height: 120px;
+  }
+
+  .singleRecipeImg {
+    width: 300px;
+    height: 300px;
+  }
+
+  .recipeCapture {
+    width: 350px;
+  }
+
+  .bt-m {
     display: none;
   }
 
@@ -881,8 +861,15 @@ table th {
     text-align: center;
   }
 
+  .main-sub p {
+    margin-bottom: 2px;
+  }
+
   .mid-container {
-    height: 155vh;
+    margin-top: -150px;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    height: 153vh;
   }
 
   .mid-container h3 {
@@ -895,13 +882,15 @@ table th {
   }
 
   .img-2 {
-    width: 70%;
-    padding-left: 30px;
+    width: 60%;
   }
 
   .main-2 {
-    /* margin: 0 auto; */
-    padding-left: 100px;
+    margin: 0 auto;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    top: -13rem;
   }
 
   .sub-img {
@@ -916,33 +905,79 @@ table th {
     margin-bottom: -1rem;
   }
 
-  .card-3-s {
-    display: none;
+  .all-cards {
+    margin-top: -3rem;
   }
 
   .card-3 img {
     width: 65%;
   }
 
+  .last-card {
+    margin-top: 0.3rem;
+  }
+
   .footer {
     max-width: 700px;
   }
 
-  .footer .menu {
-    position: relative;
-    top: -5rem;
-    margin-bottom: 2rem;
+  .last-link {
+    padding-top: 200px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1300px;
+  }
+
+  .singleImg {
+    width: 300px;
+    height: 300px;
+  }
+
+  .singleRecipeImg {
+    width: 600px;
+    height: 600px;
+  }
+
+  .main-sub {
+    width: 600px;
+  }
+
+  .main-sub h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+
+  .main-sub p {
+    font-size: 25px;
+  }
+
+  .mid-container {
+    height: 80vh;
+    border-radius: 5%;
+  }
+
+  .footer {
+    max-width: 1000px;
+  }
+
+  .footer p {
+    font-size: 30px;
   }
 
   .footer-div-1 {
-    display: none;
+    width: 450px;
   }
 
-  .footer-div-2 {
-    display: none;
+  .f-h {
+    font-size: 40px;
   }
 
-  .last-link {
-    padding-top: 200px;
+  .footer-div-1 li {
+    position: relative;
+    left: 4rem;
+    margin: 20px;
   }
 }

@@ -1,6 +1,5 @@
 import React from 'react';
-import background from '../../images/toa-heftiba.jpg';
-import Menu from '../layout/Menu';
+import image from '../../images/brooke-lark.jpg';
 import image2 from '../../images/sin-recpie-img.jpg';
 import image3 from '../../images/today-recipe1.jpg';
 import image4 from '../../images/recipe6.png';
@@ -9,38 +8,12 @@ import image5 from '../../images/today-recipe2.jpg';
 const Home = () => {
     return (
         <div>
-            <div style={bg_style}>
-                <Menu />
-                <div className="container">
-                    <div className="m-t text-left">
-                        <p className="lead-2">The Perfect Choice</p>
-                        <h1 className='m-h'>Chicken and Mushroom</h1>
-                        <p className='lead-3'>Fresh, organic ingredients. Carefully prepared</p>
-                    </div>
-                    <button className='btn btn-success bt-m'>
-                        BOOK A TABLE
-                    </button>
+            <div className='home'>
+                <div>
+                    <img src={image} alt="" className='homeImg' />
                 </div>
             </div>
-            <div className="container">
-                <div className="grid-4 card_cont">
-                    <div className='card-2 all-center sub-img'>
-                        <i className="fa fa-birthday-cake text-primary fa-8x" />
-                        <p className="lead m-h">Meats</p>
-                    </div>
-                    <div className='card-2 all-center'>
-                        <i className="fa fa-cubes text-success fa-8x" />
-                        <p className="lead m-h">Bakery</p>
-                    </div>
-                    <div className='card-2 all-center'>
-                        <i className="fa fa-cutlery text-dark fa-8x" />
-                        <p className="lead m-h">Vegetables</p>
-                    </div>
-                    <div className='card-2 all-center'>
-                        <i className="fa fa-inbox text-warning fa-8x" />
-                        <p className="lead m-h">Cheese</p>
-                    </div>
-                </div>
+            <div>
                 <div className="grid-2 my-3 main-2">
                     <div>
                         <img src={image2} alt="" className='img-2' />
@@ -49,7 +22,7 @@ const Home = () => {
                         <h1>
                             Chicken Kebabs with Roasted Red Onions.
                         </h1>
-                        <p className="">
+                        <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ratione optio nulla illum, eius dolor maiores Lorem ipsum dolor sit amEa ratione optio nullaius dolor maiores et, cnulla illum, eius dolor maiores Lorem ipsumonsectetur adipisicing elit.
                         </p>
                         <button className='btn btn-success bt-m'>
@@ -64,7 +37,7 @@ const Home = () => {
                     <h1>
                         TODAY RECIPES
                     </h1>
-                    <div className="grid-3" style={menuStyle2}>
+                    <div className="grid-3 all-cards" style={menuStyle2}>
                         <div className="card-3 all-center">
                             <img src={image3} alt="" />
                             <div className="text-left">
@@ -97,7 +70,7 @@ const Home = () => {
                                 <p className='my'>Serves: <strong>4 persons</strong></p>
                             </div>
                         </div>
-                        <div className="card-3 all-center">
+                        <div className="card-3 last-card all-center">
                             <img src={image5} alt="" />
                             <div className="text-left">
                                 <a href="/" className='text-dark'>
@@ -118,14 +91,6 @@ const Home = () => {
             </div>
         </div>
     );
-};
-
-const bg_style = {
-    backgroundImage: `url(${background})`, 
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    height: '100vh',
 };
 
 const menuStyle2 = {

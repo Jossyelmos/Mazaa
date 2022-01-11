@@ -9,8 +9,7 @@ const RecipeItem = ({ recipe: { id, imageURL, name, } }) => {
             <img 
                 src={imageURL} 
                 alt="" 
-                className= 'round-img'
-                style={{ width: '200px', height: '200px' }} 
+                className= 'round-img singleImg' 
             />
             <h3>{name}</h3>
             <Link to={`/recipe/${id}`} className="btn btn-dark btn-sm my-1">

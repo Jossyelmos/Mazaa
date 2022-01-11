@@ -1,6 +1,4 @@
 import React, { Fragment, useContext } from 'react';
-import background from '../../images/toa-heftiba.jpg';
-import Menu from '../layout/Menu';
 import capture4 from '../../images/Capture4.PNG';
 import { useParams } from 'react-router';
 import { RecipeContext } from '../../Context';
@@ -14,7 +12,6 @@ const Recipe = () => {
     const [loading] = value.loading;
 
     const details = recipes.filter((recipe) => recipe.id === id);
-    console.log("", details);
 
     if (loading) {
         return <Spinner />
@@ -22,12 +19,11 @@ const Recipe = () => {
 
     return (
         <Fragment>
-            <div style={bg_style}>
-                <Menu />
+            <div>
                 <div className="container">
                     <div className="mt-2 all-center">
                         <h1>RECIPE DETAILS</h1>
-                        <p><a href="#!">Home </a> - <span><a href='#!'>Recipe Details</a></span></p>
+                        <p><a href="/">Home </a> - <span><a href='#!'>Recipe Details</a></span></p>
                         
                     </div>
                 </div>
@@ -43,8 +39,7 @@ const Recipe = () => {
                             <img 
                                 src={recipe.imageURL} 
                                 alt=""
-                                style={{ width: '500px', height: '500px' }}
-                                className= 'round-img' 
+                                className= 'round-img singleRecipeImg' 
                             />
                             <div className= 'main-sub'>
                                 <h1>{recipe.name}</h1>
@@ -52,7 +47,7 @@ const Recipe = () => {
                                 <img 
                                     src={capture4} 
                                     alt=""
-                                    style={{ width: '600px', marginTop: '-20px', marginLeft: '-20px' }} 
+                                    className='recipeCapture'
                                 />
                                 <div className="recipe-div-1">
                                     <ul>
@@ -112,14 +107,6 @@ const Recipe = () => {
             </div>
         </Fragment>
     );
-};
-
-const bg_style = {
-    backgroundImage: `url(${background})`, 
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
-    height: '70vh',
 };
 
 export default Recipe;
