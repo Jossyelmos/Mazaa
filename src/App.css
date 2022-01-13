@@ -60,6 +60,7 @@ img {
 .singleImg {
   width: 200px;
   height: 200px;
+  transition: transform 0.2s;
 }
 
 .singleRecipeImg {
@@ -73,29 +74,33 @@ img {
   margin-left: -20px;
 }
 
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 5rem;
+.main-2 {
+  position: relative;
+  top: 2rem;
 }
 
-.menu-ul {
-  display: flex;
-  margin-left: 10px;
+.blink {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
 }
 
-.menu li {
-  margin-left: 0.9rem;
+.blink a {
+  padding: 15px;
+  position: relative;
+  top: 2rem;
+  border: 1px dotted #ffb200;
+  color: #333;
 }
 
-.menu li a {
-  font-size: 1.2rem;
-  color: #888;
+.blink a:hover {
+  background-color: #333;
+  color: #ccc;
 }
 
-.menu a:hover {
-  color: var(--success-color);
+.homeIcon {
+  padding-left: 0.5rem;
 }
 
 .bt-m {
@@ -213,6 +218,11 @@ img {
 .about-p {
   width: 300px;
   margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.about q {
+  width: 500px;
 }
 
 /* Footer */
@@ -823,6 +833,12 @@ table th {
     height: 250px;
   }
 
+  .blink a {
+    padding: 13px;
+    position: relative;
+    top: -12rem;
+  }
+
   .singleImg {
     width: 120px;
     height: 120px;
@@ -869,7 +885,7 @@ table th {
     margin-top: -150px;
     border-radius: 5px;
     margin-bottom: 2rem;
-    height: 153vh;
+    height: 165vh;
   }
 
   .mid-container h3 {
@@ -888,9 +904,10 @@ table th {
   .main-2 {
     margin: 0 auto;
     text-align: center;
+    justify-content: center;
     align-content: center;
     position: relative;
-    top: -13rem;
+    top: -10rem;
   }
 
   .sub-img {

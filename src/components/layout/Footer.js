@@ -12,22 +12,22 @@ const Footer = () => {
                     </p>
                     <ul>
                         <li>
-                            <a href="#!">
+                            <a href="https://web.facebook.com/oluniyi.olufisoyeamos" target='_blank' without rel="noreferrer">
                                 <i className="fa fa-facebook br-c" />
                             </a>
                         </li>
                         <li>
-                            <a href="#!">
+                            <a href="#!" target='_blank' without rel="noreferrer">
                                 <i className="fa fa-google-plus br-c" />
                             </a>
                         </li>
                         <li>
-                            <a href="#!">
+                            <a href="https://twitter.com/home" target='_blank' without rel="noreferrer">
                                 <i className="fa fa-twitter br-c" />
                             </a>
                         </li>
                         <li>
-                            <a href="#!">
+                            <a href="https://www.linkedin.com/in/olufisoye-amos-oluniyi-966851228/" target='_blank' without rel="noreferrer">
                                 <i className="fa fa-linkedin br-c" />
                             </a>
                         </li>

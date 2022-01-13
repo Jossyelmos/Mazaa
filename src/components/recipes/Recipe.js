@@ -52,22 +52,22 @@ const Recipe = () => {
                                 <div className="recipe-div-1">
                                     <ul>
                                         <li>
-                                            <a href="#!">
+                                            <a href="https://web.facebook.com/oluniyi.olufisoyeamos" target='_blank' without rel="noreferrer">
                                                 <i className="fa fa-facebook br-c" />
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#!">
+                                            <a href="#!" target='_blank' without rel="noreferrer">
                                                 <i className="fa fa-google-plus br-c" />
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#!">
+                                            <a href="https://twitter.com/home" target='_blank' without rel="noreferrer">
                                                 <i className="fa fa-twitter br-c" />
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#!">
+                                            <a href="https://www.linkedin.com/in/olufisoye-amos-oluniyi-966851228/" target='_blank' without rel="noreferrer">
                                                 <i className="fa fa-linkedin br-c" />
                                             </a>
                                         </li>
@@ -76,13 +76,16 @@ const Recipe = () => {
                             </div>
                         </div>
                         <p className='recipe-p'>
-                            Lorem ipsum dolor sit amet, consectetur a dipisicing elit. Ea ratione optio nulla illum, eius do lor maiores nulla illum, sitiamet, consectetur a dipis icing eit amet, conse ulla illum, eius do lor maiores nulla illum, Lorem ipsum dolor sit a et, coinsectetur a dip onsectetur a dipis icing elit. Eaisicing elit. Ea ratione o ptio nulla illum, eius lla illum, Loremo lor sit amet, consectetur a dipis icing eit amet, conse ulla illum, eius do lor maiores nulla illum, Lorem ipsum dolor s it am et, consecetur a dip onsectetur a dipis icing elit. Eaisicing nulla illum, eius lla illum, Lorem ipsum dolor sit.
+                        This Eat Well with Recipe's cookbook is filled with great delicious and wholesome recipes
+for breakfast, lunch and dinner, inspired by the Indian food trend. All recipes are
+100% plant-based, meaning they are dairy-free, egg-free and contain no meat or
+animal protein. The recipes are non-GM and cholesterol-free so they are good for
+your heart and overall health.<br/>
 
-    Ea ratione o ptio nulla illum, eius lla illum, Loremo lor sit amet, consectetur a dipis icing eit amet, conse ulla illum, us do lor maiores nulla illum, Lorem ipsum dolor s it am et, consect etur a dip onsectetur a dipis icing elit. Eaisicing nulla illum, eius lla illum, Lorem ipsum dolor sit.
-
+                        “Amazing flavor, and so simple! No salt needed here. In fact, you may wish to use half the ranch dressing mix to cut back on the saltiness. Found this Crock-Pot pot roast recipe one of a website called www.recipegoldmine.com. It's all the rage there, so I thought I'd try it.”
                         </p>
                         <div>
-                            <a href={recipe.originalURL} className='btn btn-dark btn-block my-1 text-center'>
+                            <a href={recipe.originalURL} target='_blank' without rel="noreferrer" className='btn btn-dark btn-block my-1 text-center'>
                                 Get Recipe Details
                             </a>
                         </div>

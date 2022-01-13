@@ -6,11 +6,13 @@ const RecipeItem = ({ recipe: { id, imageURL, name, } }) => {
 
     return (
         <div className='card text-center'>
-            <img 
-                src={imageURL} 
-                alt="" 
-                className= 'round-img singleImg' 
-            />
+            <div className="">
+                <img 
+                    src={imageURL} 
+                    alt="" 
+                    className= 'round-img singleImg' 
+                />
+            </div>
             <h3>{name}</h3>
             <Link to={`/recipe/${id}`} className="btn btn-dark btn-sm my-1">
                 More

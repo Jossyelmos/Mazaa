@@ -13,6 +13,12 @@ const Home = () => {
                     <img src={image} alt="" className='homeImg' />
                 </div>
             </div>
+            <div className='blink'>
+                <a href='recipegrid'>
+                    Go To Recipes
+                    <i className='fa fa-arrow-right homeIcon text-light' />
+                </a>
+            </div>
             <div>
                 <div className="grid-2 my-3 main-2">
                     <div>
@@ -23,7 +29,7 @@ const Home = () => {
                             Chicken Kebabs with Roasted Red Onions.
                         </h1>
                         <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ratione optio nulla illum, eius dolor maiores Lorem ipsum dolor sit amEa ratione optio nullaius dolor maiores et, cnulla illum, eius dolor maiores Lorem ipsumonsectetur adipisicing elit.
+                        A summery dish of red onion wedges with tender chicken marinated in a zingy combination of flavours, including lemon, garlic and oregano.
                         </p>
                         <button className='btn btn-success bt-m'>
                             LEARN MORE
