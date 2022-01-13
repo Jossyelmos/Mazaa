@@ -853,6 +853,10 @@ table th {
     width: 350px;
   }
 
+  .about q {
+    width: 320px;
+  }
+
   .bt-m {
     display: none;
   }
@@ -885,7 +889,7 @@ table th {
     margin-top: -150px;
     border-radius: 5px;
     margin-bottom: 2rem;
-    height: 165vh;
+    height: 153vh;
   }
 
   .mid-container h3 {
@@ -940,6 +944,13 @@ table th {
 
   .last-link {
     padding-top: 200px;
+  }
+}
+
+@media (max-width: 400px) {
+  .mid-container {
+    /* margin-bottom: rem; */
+    height: 192vh;
   }
 }
 
