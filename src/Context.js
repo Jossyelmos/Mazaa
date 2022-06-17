@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const RecipeContext = createContext();
 
-const API = "https://a.nacapi.com/recipes";
+const API = "https://chow-backends.herokuapp.com/recipes";
 
 export const RecipeProvider = (props) => {
   const [recipes, setRecipes] = useState([]);
