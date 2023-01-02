@@ -3,8 +3,6 @@ import axios from "axios";
 
 export const RecipeContext = createContext();
 
-const API = "https://a.nacapi.com/recipes";
-
 export const RecipeProvider = (props) => {
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -12,9 +10,9 @@ export const RecipeProvider = (props) => {
   const fetchRecipes = async () => {
     setLoading(true);
     try {
-      const response = await axios.get(API);
+      const response = await axios.get("https://api.jsonbin.io/v3/b/63b2666a15ab31599e29eeae");
       setLoading(false);
-      setRecipes(response.data);
+      setRecipes(response.data.record.recipes);
     } catch (error) {
       console.log(error);
     }
@@ -22,6 +20,8 @@ export const RecipeProvider = (props) => {
 
   useEffect(() => {
     fetchRecipes();
+
+    // eslint-disable-next-line
   }, []);
 
   const value = {
